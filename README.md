@@ -1,2 +1,2 @@
-# ds
- datastructres in js
+# DATA STRUCTURES MADE EASY
+ JS implementation
