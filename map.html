@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.1.5/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.6.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.3"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.1.5/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"root","d":0,"v":"","c":[{"t":"heading","d":1,"p":{"lines":[1,2]},"v":"Agile Enablers","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"From Vighneshs roadmap it is about"},{"t":"heading","d":2,"p":{"lines":[4,5]},"v":"Culture"},{"t":"heading","d":2,"p":{"lines":[5,6]},"v":"Communication"},{"t":"heading","d":2,"p":{"lines":[6,7]},"v":"Dev Practices"},{"t":"heading","d":2,"p":{"lines":[7,8]},"v":"Measurements","c":[{"t":"heading","d":3,"p":{"lines":[11,12]},"v":"Always start with end in mind."}]},{"t":"heading","d":2,"p":{"lines":[12,13]},"v":"For end, we need to know current state."}]},{"t":"heading","d":1,"p":{"lines":[14,15]},"v":"Step wise approach to determine current state"},{"t":"heading","d":1,"p":{"lines":[16,17]},"v":"Baseline our metrics","c":[{"t":"list_item","d":3,"p":{"lines":[17,18]},"v":"from accelerate"},{"t":"list_item","d":3,"p":{"lines":[18,19]},"v":"<img src=\"screenshot.png\" alt=\"Screenshot\">"},{"t":"list_item","d":3,"p":{"lines":[19,20]},"v":"many tools available to measure."}]},{"t":"heading","d":1,"p":{"lines":[21,22]},"v":"Baseline our tools","c":[{"t":"bullet_list","d":2,"p":{"lines":[22,24]},"v":"","c":[{"t":"list_item","d":3,"p":{"lines":[22,23]},"v":"importance of tools as Vighnesh rightly mentions is understated"}]},{"t":"heading","d":2,"p":{"lines":[24,25]},"v":"document the following","c":[{"t":"list_item","d":4,"p":{"lines":[25,26]},"v":"Source control (e.g., Github, Gitlab, Bitbucket)"},{"t":"list_item","d":4,"p":{"lines":[26,28]},"v":"Code reviews (e.g., pull requests, merge requests,    codewalkthroughs)<br>\n12"},{"t":"list_item","d":4,"p":{"lines":[28,29]},"v":"Automated testing - CI (e.g., Jenkins, CircleCI, GitHub Actions)"},{"t":"list_item","d":4,"p":{"lines":[29,30]},"v":"Deployments - CD (e.g., AWS CodeDeploy, Harness, Jenkins)"},{"t":"list_item","d":4,"p":{"lines":[30,31]},"v":"Observability (e.g., Datadog, New Relic, CloudWatch)"},{"t":"list_item","d":4,"p":{"lines":[31,32]},"v":"Error tracking (e.g., Sentry, Rollbar, Bugsnag)"},{"t":"list_item","d":4,"p":{"lines":[32,33]},"v":"Feature flagging (e.g., LaunchDarkly, Split, Cloudbees)"},{"t":"list_item","d":4,"p":{"lines":[33,34]},"v":"Deployment environments (e.g., Production, Staging, QA)"},{"t":"list_item","d":4,"p":{"lines":[34,35]},"v":"Configuration as code (e.g., Terraform, Chef, Puppet)"}]}]},{"t":"heading","d":1,"p":{"lines":[36,37]},"v":"Baseline Communication","c":[{"t":"heading","d":2,"p":{"lines":[37,38]},"v":"Tools","c":[{"t":"list_item","d":4,"p":{"lines":[38,39]},"v":"Issue tracking (e.g. Jira, Pivotal tracker, Linear)"},{"t":"list_item","d":4,"p":{"lines":[39,40]},"v":"Chat tools (e.g. Slack, Teams, Discord)*"},{"t":"list_item","d":4,"p":{"lines":[40,41]},"v":"Visibility - deployment tracking (e.g. Sleuth, Harness)"},{"t":"list_item","d":4,"p":{"lines":[41,42]},"v":"Knowledge sharing (e.g. Google Docs, Confluence, Notion)"}]},{"t":"heading","d":2,"p":{"lines":[43,44]},"v":"Developer Comms","c":[{"t":"list_item","d":4,"p":{"lines":[45,47]},"v":"How often do our developers work together? Through what<br>\nmeans? Slack? Issue tickets? Pair programming? Code reviews?"},{"t":"list_item","d":4,"p":{"lines":[47,48]},"v":"How do we communicate processes, like deploys, to our team?"},{"t":"list_item","d":4,"p":{"lines":[48,49]},"v":"How does our team improve? What processes exist for this?"}]},{"t":"heading","d":2,"p":{"lines":[50,51]},"v":"Operations","c":[{"t":"list_item","d":4,"p":{"lines":[52,56]},"v":"How do we understand the health of our deployment<br>\nenvironments? Is this available to all or just an anointed team? How<br>\nhard is it to find the right information?<br>\nIntra-team communication"},{"t":"list_item","d":4,"p":{"lines":[56,60]},"v":"How do our developers communicate with external stakeholders<br>\nsuch as product managers and designers? How often and how<br>\ndirectly? Hourly, daily, weekly, monthly? Only through a proxy?<br>\nExtra-team communication"},{"t":"list_item","d":4,"p":{"lines":[60,62]},"v":"How does the rest of the company know what our team has<br>\naccomplished?"},{"t":"list_item","d":4,"p":{"lines":[62,63]},"v":"How do others know what our goals are and if me’re hitting them?"},{"t":"list_item","d":4,"p":{"lines":[63,64]},"v":"How do other functions that rely on our work know when it’s done?"}]}]},{"t":"heading","d":1,"p":{"lines":[66,67]},"v":"Baseline Culture","c":[{"t":"heading","d":2,"p":{"lines":[67,68]},"v":"Culture of safety","c":[{"t":"list_item","d":4,"p":{"lines":[68,69]},"v":"How does our team verify production is in a healthy state?"},{"t":"list_item","d":4,"p":{"lines":[69,70]},"v":"How blameless is our team when we encounter incidents?"},{"t":"list_item","d":4,"p":{"lines":[70,72]},"v":"Are our developers supported in creating the tests and<br>\nenvironments that allow for them to safely make change?"}]},{"t":"heading","d":2,"p":{"lines":[72,73]},"v":"Culture of confidence","c":[{"t":"list_item","d":4,"p":{"lines":[73,74]},"v":"How do we gain confidence in the changes we release?"},{"t":"list_item","d":4,"p":{"lines":[74,77]},"v":"Do Product Managers, Engineering Managers, design and<br>\nengineering feel like they’re on the same team? Do they trust each<br>\nother’s work? How do they verify this?"},{"t":"list_item","d":4,"p":{"lines":[77,80]},"v":"Does our team know how to ship and verify incrementally and<br>\n“incomplete” changes or does it only know how to do this at the<br>\nfeature level?"}]},{"t":"heading","d":2,"p":{"lines":[80,81]},"v":"Culture of openness","c":[{"t":"list_item","d":4,"p":{"lines":[81,82]},"v":"How does our team communicate about what’s changing?"},{"t":"list_item","d":4,"p":{"lines":[82,84]},"v":"How does our team define success? Is this measure open to the<br>\nteam, the execs, and the entire company?"},{"t":"list_item","d":4,"p":{"lines":[84,86]},"v":"Is it ok for our team to fail and learn? How does our team support<br>\nthis?"}]},{"t":"heading","d":2,"p":{"lines":[87,88]},"v":"Culture of responsibility","c":[{"t":"list_item","d":4,"p":{"lines":[88,89]},"v":"Do individuals own their work?"},{"t":"list_item","d":4,"p":{"lines":[89,92]},"v":"Do our developers own their code? At what point are they no<br>\nlonger able to “see a change through”? (dev, testing, review, merge,<br>\nstaging, prod)"},{"t":"list_item","d":4,"p":{"lines":[92,94]},"v":"Do individuals feel empowered to improve the processes they work<br>\nwithin?"},{"t":"list_item","d":4,"p":{"lines":[94,95]},"v":"When things break is it our problem or someone else's problem?"},{"t":"list_item","d":4,"p":{"lines":[95,96]},"v":"Who owns reliability?"}]}]},{"t":"heading","d":1,"p":{"lines":[98,99]},"v":"Once we average each section, we will get a score which tells us where we should go next in an objective manner."}],"p":{}})</script>
+</body>
+</html>
